@@ -417,7 +417,8 @@ Fifth color: rgba(244, 244, 253, 1)
 |            Modal 
 |===============================
 */
-.backdrop {
+.backdrop-container {
+  padding: 72px 24px 24px 24px;
   position: fixed;
   top: 0;
   left: 0;
@@ -433,7 +434,7 @@ Fifth color: rgba(244, 244, 253, 1)
   pointer-events: none;
 }
 
-.modal {
+.modal-container {
   display: flex;
   flex-wrap: wrap;
   padding: 15px;
@@ -490,11 +491,15 @@ Fifth color: rgba(244, 244, 253, 1)
 
 .modal-text {
   display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue, #2e2f42);
+  margin-bottom: 16px;
 }
-.modal-title {
-  display: block;
-  margin-top: 25px;
-}
+
 .modal-text-sub {
   margin-left: 17px;
 }
@@ -856,7 +861,7 @@ Fifth color: rgba(244, 244, 253, 1)
 
 .e-mail-input-form {
   display: flex;
-  gap: 24px:
+  gap: 24px;
 }
 
 .e-mail-input-form-label {
@@ -864,46 +869,47 @@ Fifth color: rgba(244, 244, 253, 1)
 
 .e-mail-input {
   width: 264px;
-  height: 40px; 
-  border: 1px solid #ffffff; 
-  background-color: transparent; 
-  font-size: 12px; 
-line-height: 1.5;
-letter-spacing: 0.04em; 
-padding-left: 16px;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px; 
-color: #ffffff; 
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #ffffff;
 }
 
 .e-mail-input::placeholder {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .subscribe-button {
- padding: 8px 24px;
+  padding: 8px 24px;
   gap: 16px;
-  min-width: 165px; 
+  min-width: 165px;
   height: 40px;
   display: flex;
-   justify-content: center; 
-   align-items: center;
-    /* Button Text */
-    font-family: "Roboto", sans-serif; 
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-     letter-spacing: 0.04em;
-     text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* Button Text */
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
   font-style: normal;
-     color: var(--white, #fff);
-      cursor: pointer;
-       background: var(--iris, #4d5ae5);
-       border: none;
-        border-radius: 4px; 
+  color: var(--white, #fff);
+  cursor: pointer;
+  background: var(--iris, #4d5ae5);
+  border: none;
+  border-radius: 4px;
 }
 
 .logo-svg {
+  margin-left: 16px;
 }
 
 /* 
