@@ -838,9 +838,31 @@ Fifth color: rgba(244, 244, 253, 1)
 }
 
 .e-mail-input-container {
+  display: inline-block;
 }
 
 .e-mail-input {
+}
+
+.subscribe-button {
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 4px;
+  background: var(--iris, #4d5ae5);
+  color: var(--white, #fff);
+  text-align: center;
+  /* Button Text */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .logo-svg {
