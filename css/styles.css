@@ -418,7 +418,6 @@ Fifth color: rgba(244, 244, 253, 1)
 |===============================
 */
 .backdrop-container {
-  padding: 72px 24px 24px 24px;
   position: fixed;
   top: 0;
   left: 0;
@@ -435,6 +434,7 @@ Fifth color: rgba(244, 244, 253, 1)
 }
 
 .modal-container {
+  padding: 72px 24px 24px 24px;
   margin-bottom: 8px;
 
   display: flex;
