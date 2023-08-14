@@ -633,7 +633,7 @@
             <label class="modal-label" for="user-comment">Comment</label>
             <div class="modal-input-container">
               <textarea
-                class="modal-label-input"
+                class="modal-textarea-input"
                 id="user-comment"
                 name="user-comment"
                  placeholder="Text input"
@@ -642,8 +642,22 @@
             </div>
           </div>
         </form>
-        <!-- Checkbox -->
-        <p>I accept the terms and conditions of the Privacy Policy</p>
+         <!-- Checkbox -->
+        <div class="modal-checkbox-container">
+            <input
+                class="modal-checkbox-input visually-hidden"
+                id="user-privacy"
+                name="user-privacy"
+                type="checkbox"
+                value="true"
+              />
+              <label class="modal-u-privacy-label" for="user-privacy" >
+                <span class="u-privacy-label-span"> 
+                  <svg class="modal-label-icon" width="10" height="8">
+                <use href="./images/modal.svg#cross"></use>
+              </svg></span>I accept the terms and conditions of the <a class="u-privacy-label-link">Privacy Policy</a> </label>
+        </div>
+       
         <button>Send</button>
       </div>
     </div>
