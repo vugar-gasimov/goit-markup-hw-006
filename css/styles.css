@@ -1,6 +1,7 @@
 :root {
   --slate: #434455;
   --navy-blue: #2e2f42;
+  --navy-blue-rgba: rgba(46, 47, 66, 0.4);
   --iris: #4d5ae5;
   --cornflower: #e7e9fc;
   --cloud: #f4f4fd;
@@ -110,7 +111,9 @@ Fifth color: rgba(244, 244, 253, 1)
   color: var(--white);
   background-color: var(--iris);
   border-color: var(--ocean);
-  transition: var(--transition-timing-icon);
+  transition: color var(--transition-timing-icon);
+  transition: background-color
+    var(--transition-timing-icon, 250ms cubic-bezier(0.4, 0, 0.2, 1));
 }
 .button.primary:hover,
 .button.primary:focus {
@@ -462,9 +465,12 @@ Fifth color: rgba(244, 244, 253, 1)
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.name-container {
+  margin-bottom: 8px;
+}
+
 .modal-label-container {
   position: relative;
-
   margin-bottom: 16px;
 }
 
@@ -516,8 +522,8 @@ Fifth color: rgba(244, 244, 253, 1)
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--navy-blue, rgba(46, 47, 66, 0.4));
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  color: var(--navy-blue-rgba, rgba(46, 47, 66, 0.4));
+  border: 1px solid var(--navy-blue-rgba, rgba(46, 47, 66, 0.4));
   border-radius: 4px;
   background-color: transparent;
   padding: 8px 16px;
