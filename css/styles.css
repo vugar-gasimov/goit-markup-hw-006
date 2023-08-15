@@ -545,14 +545,13 @@ Fifth color: rgba(244, 244, 253, 1)
 }
 
 .modal-u-privacy-label {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 8px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate, #8e8f99);
-  font-weight: 400;
 }
 
 .u-privacy-label-span {
@@ -562,26 +561,26 @@ Fifth color: rgba(244, 244, 253, 1)
   border-radius: 2px;
   transition: background-color
       var(--transition-timing-icon, 250ms cubic-bezier(0.4, 0, 0.2, 1)),
-    border var(--transition-timing-icon, 250ms cubic-bezier(0.4, 0, 0.2, 1)),
-    fill var(--transition-timing-icon, 250ms cubic-bezier(0.4, 0, 0.2, 1));
+    border var(--transition-timing-icon, 250ms cubic-bezier(0.4, 0, 0.2, 1));
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  fill: transparent;
-  stroke-width: 1px;
-  stroke: var(--navy-blue, rgba(46, 47, 66, 0.4));
+}
+#user-privacy:checked + .modal-u-privacy-label .u-privacy-label-span {
+  background-color: var(--ocean, #404bbf);
+  border-color: transparent;
 }
 
 .label-span-icon {
-  stroke: transparent;
+  opacity: 0;
+  transition: opacity var(--transition-timing-icon);
 }
-
-#user-privacy + .u-privacy-label-span {
-  background-color: var(--ocean, #404bbf);
-  border: none;
-  fill: var(--cloud, #f4f4fd);
+#user-privacy:checked
+  + .modal-u-privacy-label
+  .u-privacy-label-span
+  .label-span-icon {
+  opacity: 1;
 }
-
 .u-privacy-label-link {
   color: var(--iris, #4d5ae5);
   text-decoration: underline;
