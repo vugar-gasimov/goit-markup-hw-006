@@ -435,7 +435,7 @@ Fifth color: rgba(244, 244, 253, 1)
 
 .modal-container {
   width: 100%;
-  max-width: 392px;
+  max-width: 408px;
   padding: 72px 24px 24px 24px;
   margin-bottom: 8px;
 
@@ -551,12 +551,20 @@ Fifth color: rgba(244, 244, 253, 1)
   align-items: center;
   justify-content: center;
   fill: transparent;
+  stroke-width: 1px;
+  stroke: var(--navy-blue, rgba(46, 47, 66, 0.4));
 }
 
 #user-privacy + .u-privacy-label-span {
   background-color: var(--ocean, #404bbf);
   border: none;
   fill: var(--cloud, #f4f4fd);
+}
+.modal-label-icon {
+  display: flex;
+}
+.u-privacy-label-link {
+  color: var(--iris, #4d5ae5);
 }
 
 .modal-form {
@@ -611,6 +619,19 @@ Fifth color: rgba(244, 244, 253, 1)
   color: var(--navy-blue, #2e2f42);
   margin-bottom: 16px;
 }
+
+.modal-checkbox-input:checked + .u-privacy-label-span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+/* input[type="checkbox"]:checked + .u-privacy-label-span {
+  background-color: var(--ocean, #404bbf);
+  border-color: var(--ocean, #404bbf);
+  fill: var(--ocean, #404bbf);
+  stroke: var(--ocean, #404bbf);
+} */
 
 /*
 |===============================
