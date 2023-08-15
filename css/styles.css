@@ -553,22 +553,7 @@ Fifth color: rgba(244, 244, 253, 1)
   letter-spacing: 0.04em;
   color: var(--light-slate, #8e8f99);
 }
-
-.u-privacy-label-span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  fill: transparent;
-  transition: background-color
-      var(--transition-timing-icon, 250ms cubic-bezier(0.4, 0, 0.2, 1)),
-    border var(--transition-timing-icon, 250ms cubic-bezier(0.4, 0, 0.2, 1)),
-    fill var(--transition-timing-icon, 250ms cubic-bezier(0.4, 0, 0.2, 1));
-}
-
+/*  */
 #user-privacy:checked + .modal-u-privacy-label .u-privacy-label-span {
   background-color: var(--ocean, #404bbf);
   border-color: transparent;
@@ -588,6 +573,21 @@ Fifth color: rgba(244, 244, 253, 1)
 .u-privacy-label-link {
   color: var(--iris, #4d5ae5);
   text-decoration: underline;
+}
+
+.u-privacy-label-span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  fill: transparent;
+  transition: background-color
+      var(--transition-timing-icon, 250ms cubic-bezier(0.4, 0, 0.2, 1)),
+    border var(--transition-timing-icon, 250ms cubic-bezier(0.4, 0, 0.2, 1)),
+    fill var(--transition-timing-icon, 250ms cubic-bezier(0.4, 0, 0.2, 1));
 }
 
 .modal-form {
