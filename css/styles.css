@@ -562,6 +562,7 @@ Fifth color: rgba(244, 244, 253, 1)
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+  fill: transparent;
   transition: background-color
       var(--transition-timing-icon, 250ms cubic-bezier(0.4, 0, 0.2, 1)),
     border var(--transition-timing-icon, 250ms cubic-bezier(0.4, 0, 0.2, 1)),
