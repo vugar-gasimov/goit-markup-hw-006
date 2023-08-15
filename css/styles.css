@@ -467,11 +467,11 @@ Fifth color: rgba(244, 244, 253, 1)
 
 .modal-label-container {
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .name-container {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .modal-label {
