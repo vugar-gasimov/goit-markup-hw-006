@@ -63,6 +63,13 @@ a {
   text-decoration: none;
 }
 
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Primary color: rgba(46, 47, 66, 1)
 Secondary color: : rgba(67, 68, 85, 1)
 Third color: rgba(255, 255, 255, 1)
@@ -479,6 +486,7 @@ Fifth color: rgba(244, 244, 253, 1)
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
+  padding: 8px 16px;
   padding-left: 38px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -490,10 +498,10 @@ Fifth color: rgba(244, 244, 253, 1)
 
 .modal-label-icon {
   position: absolute;
-  left: 16px;
   top: 50%;
+  left: 16px;
   transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--navy-blue, #2e2f42);
 }
 
 .modal-label-input:focus + .modal-label-icon {
@@ -536,6 +544,7 @@ Fifth color: rgba(244, 244, 253, 1)
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate, #8e8f99);
+  font-weight: 400;
 }
 
 .u-privacy-label-span {
@@ -555,16 +564,19 @@ Fifth color: rgba(244, 244, 253, 1)
   stroke: var(--navy-blue, rgba(46, 47, 66, 0.4));
 }
 
+.label-span-icon {
+  stroke: transparent;
+}
+
 #user-privacy + .u-privacy-label-span {
   background-color: var(--ocean, #404bbf);
   border: none;
   fill: var(--cloud, #f4f4fd);
 }
-.modal-label-icon {
-  display: flex;
-}
+
 .u-privacy-label-link {
   color: var(--iris, #4d5ae5);
+  text-decoration: underline;
 }
 
 .modal-form {
@@ -620,18 +632,11 @@ Fifth color: rgba(244, 244, 253, 1)
   margin-bottom: 16px;
 }
 
-.modal-checkbox-input:checked + .u-privacy-label-span {
+.modal-checkbox-input:checked + .modal-u-privacy-label .u-privacy-label-span {
   background-color: #404bbf;
   border: none;
-  fill: #f4f4fd;
+  fill: var(--cloud, #f4f4fd);
 }
-
-/* input[type="checkbox"]:checked + .u-privacy-label-span {
-  background-color: var(--ocean, #404bbf);
-  border-color: var(--ocean, #404bbf);
-  fill: var(--ocean, #404bbf);
-  stroke: var(--ocean, #404bbf);
-} */
 
 /*
 |===============================
