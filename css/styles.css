@@ -552,6 +552,7 @@ Fifth color: rgba(244, 244, 253, 1)
 }
 
 .u-privacy-label-span {
+  margin-right: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
