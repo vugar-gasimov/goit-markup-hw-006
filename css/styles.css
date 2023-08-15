@@ -555,7 +555,7 @@ Fifth color: rgba(244, 244, 253, 1)
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
