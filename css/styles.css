@@ -947,6 +947,7 @@ Fifth color: rgba(244, 244, 253, 1)
 
 .e-mail-input-container {
   display: inline-block;
+  margin-left: 80px;
 }
 
 .e-mail-input-text {
