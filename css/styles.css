@@ -1012,6 +1012,12 @@ Fifth color: rgba(244, 244, 253, 1)
   border-radius: 4px;
 }
 
+.subscribe-button:hover,
+.subscribe-button:focus {
+  /* background-color: #31d0aa; */
+  background-color: var(--ocean);
+}
+
 .logo-svg {
   margin-left: 16px;
 }
