@@ -573,6 +573,11 @@ Fifth color: rgba(244, 244, 253, 1)
   border-color: transparent;
 }
 
+#user-privacy:focus-visible + .modal-u-privacy-label .u-privacy-label-span {
+  outline: 2px solid var(--ocean);
+  outline-offset: 2px;
+}
+
 .label-span-icon {
   opacity: 0;
   transition: opacity
