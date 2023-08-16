@@ -32,6 +32,54 @@ body {
   margin: 0;
 }
 
+/* Phone + */
+@media (min-width: 320px) {
+  body {
+    background-color: var(--white);
+    background-color: yellow;
+    color: var(--slate);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    margin: 0;
+  }
+}
+
+/* Tablet + */
+@media (min-width: 768px) {
+  body {
+    background-color: var(--white);
+    background-color: #4caf50;
+    color: var(--slate);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    margin: 0;
+  }
+}
+
+/* Laptop + */
+@media (min-width: 1158px) {
+  body {
+    background-color: var(--white);
+    background-color: #3f51b5;
+    color: var(--slate);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    margin: 0;
+  }
+}
+
 .img {
   display: block;
 }
@@ -195,9 +243,12 @@ Fifth color: rgba(244, 244, 253, 1)
 }
 
 .container {
+  min-width: 320px;
+  max-width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1128px;
 }
 
 /*
