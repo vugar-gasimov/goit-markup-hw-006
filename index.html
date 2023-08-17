@@ -91,6 +91,15 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -675,6 +684,37 @@
           <button class="button primary">Send</button>
         </form>
       </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal-close-icon" width="32" height="22">
+          <use href="./images/icons.svg#cross"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a href="https://www.example.com" class="mobile-menu-link link"
+            >About</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a href="https://www.example.com" class="mobile-menu-link link"
+            >Products</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a href="https://www.example.com" class="mobile-menu-link link"
+            >Contacts</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a href="https://www.example.com" class="mobile-menu-link link"
+            >Career</a
+          >
+        </li>
+      </ul>
     </div>
     <!-- Modal for hidden window -->
     <script src="./js/modal.js"></script>
