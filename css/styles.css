@@ -1453,6 +1453,8 @@ Fifth color: rgba(244, 244, 253, 1)
 }
 
 .social-links-text {
+  display: flex;
+  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
