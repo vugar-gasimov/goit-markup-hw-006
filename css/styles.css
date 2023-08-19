@@ -19,7 +19,7 @@
   --transition-timing-icon: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* Phone Mode + */
+
 body {
   background-color: var(--white);
   color: var(--slate);
@@ -30,21 +30,6 @@ body {
   font-weight: 400;
   letter-spacing: 0.32px;
   margin: 0;
-  outline: 1px solid yellow;
-}
-
-/* Tablet Mode + */
-@media only screen and (min-width: 768px) {
-  body {
-  }
-}
-
-/*
- * Desktop styles
- */
-@media only screen and (min-width: 1024px) {
-  body {
-  }
 }
 
 .img {
@@ -95,8 +80,6 @@ Third color: rgba(255, 255, 255, 1)
 Fourth color: rgba(77, 90, 229, 1)
 Fifth color: rgba(244, 244, 253, 1)
 */
-
-/* 1128 width */
 
 .button {
   display: inline-block;
@@ -202,20 +185,7 @@ Fifth color: rgba(244, 244, 253, 1)
   letter-spacing: 0.4px;
 }
 
-/*
- * Phone styles
- */
-@media only screen and (min-width: 1024px) {
-}
-/*
- * Tablet styles
- */
-@media only screen and (min-width: 1024px) {
-}
-/*
- * Desktop styles
- */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .centered {
     text-align: center;
     max-width: 496px;
@@ -228,10 +198,8 @@ Fifth color: rgba(244, 244, 253, 1)
 
 .card-list > li {
   text-align: center;
-
   background-color: var(--white);
   color: var(--slate);
-  /* Body */
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -246,14 +214,13 @@ Fifth color: rgba(244, 244, 253, 1)
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 1px solid tomato; */
 }
 
 .header-container {
   display: flex;
   align-items: center;
 }
-@media only screen and (min-width: 428px) {
+@media only screen and (max-width: 767px) {
   .container {
     max-width: 428px;
   }
@@ -292,20 +259,6 @@ Fifth color: rgba(244, 244, 253, 1)
   box-shadow: var(--box-shadow);
 }
 
-/* 
- * Tablet
- */
-@media (min-width: 768px) {
-  .header {
-  }
-}
-/*
- *  Desktop
- */
-@media (min-width: 1158px) {
-  .header {
-  }
-}
 /*
 |================================
 |              Main 
@@ -1569,10 +1522,6 @@ Fifth color: rgba(244, 244, 253, 1)
 .subscribe-button:focus {
   /* background-color: #31d0aa; */
   background-color: var(--ocean);
-}
-
-.logo-svg {
-  margin-left: 16px;
 }
 
 /* 
