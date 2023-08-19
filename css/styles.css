@@ -246,7 +246,7 @@ Fifth color: rgba(244, 244, 253, 1)
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 .header-container {
@@ -501,6 +501,33 @@ Fifth color: rgba(244, 244, 253, 1)
 /*
  * Phone Mode +
  */
+@media (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(./images/index-section-one/mobile/Dark-bg@2x.png);
+  }
+}
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(./images/index-section-one/tablet/Dark-bg@2x.png);
+  }
+}
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(./images/index-section-one/people-office@2x.jpg);
+  }
+}
 .section-one {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
