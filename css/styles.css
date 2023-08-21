@@ -458,13 +458,13 @@ Fifth color: rgba(244, 244, 253, 1)
 /*
  * Phone Mode +
  */
-@media (min-resolution: 192dpi) {
+@media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .section-one {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(./images/index-section-one/mobile/Dark-bg@2x.png);
+      url(./images/index-section-one/mobile/Bgc-img-one@2x.png);
   }
 }
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
@@ -492,6 +492,7 @@ Fifth color: rgba(244, 244, 253, 1)
     ),
     url(../images/index-section-one/people-office-one.jpg);
 
+  max-width: 1440px;
   padding-top: 77px;
   padding-bottom: 77px;
   margin-left: auto;
@@ -505,7 +506,12 @@ Fifth color: rgba(244, 244, 253, 1)
 
   text-align: center;
 }
-
+@media only screen and (max-width: 767px) {
+  .section-one {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+}
 /* 
  * Tablet Mode + 
  */
@@ -613,6 +619,19 @@ Fifth color: rgba(244, 244, 253, 1)
 
   .section-two-list h3 {
     margin-bottom: 8px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section-two-list h3 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  .section-two-list p {
+    font-weight: 500;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -791,6 +810,11 @@ Fifth color: rgba(244, 244, 253, 1)
 
   row-gap: 72px;
   column-gap: 16px;
+}
+@media only screen and (max-width: 427px) {
+  .logo-list {
+    justify-content: center;
+  }
 }
 .logo-item {
   min-width: 190px;
@@ -997,18 +1021,9 @@ Fifth color: rgba(244, 244, 253, 1)
     gap: 26px;
   }
 }
-@media only screen and (max-width: 1158px) {
+@media only screen and (max-width: 1157px) {
   .icons-container {
     display: none;
-  }
-
-  .paragraph-long {
-    color: var(--slate, #434455);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.32px;
   }
 }
 @media only screen and (max-width: 428px) {
@@ -1372,14 +1387,17 @@ Fifth color: rgba(244, 244, 253, 1)
     padding-bottom: 100px;
   }
   .container-footer {
-    column-gap: 80px;
     flex-wrap: nowrap;
 
     padding-left: 15px;
     padding-right: 15px;
+    column-gap: 0;
+  }
+  .text-logo-container {
+    margin-right: 120px;
   }
   .social-links {
-    margin-left: auto;
+    margin-right: 80px;
   }
 }
 
@@ -1391,10 +1409,6 @@ Fifth color: rgba(244, 244, 253, 1)
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white);
-}
-
-.f-list {
-  display: inline-block;
 }
 
 .icons-list-social-links {
